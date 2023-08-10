@@ -1,0 +1,9 @@
+<?php
+    session_start();
+    unset($_SESSION['gadde_id']);
+    unset($_SESSION['gadde_username']);
+    unset($_SESSION['gadde_level']);
+    unset($_SESSION['gadde_key']);
+    unset($_SESSION['gadde_last_login']);
+    session_destroy();
+    header("location:login.php");
